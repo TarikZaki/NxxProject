@@ -21,7 +21,7 @@
             "input": "apps/nxPractice/public"
           }
         ],
-        "styles": ["apps/nxPractice/src/styles.scss"]
+        "styles": ["libs/ui/src/styles/index.scss"]
       },
       "configurations": {
         "production": {
