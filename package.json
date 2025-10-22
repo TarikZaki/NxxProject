@@ -4,10 +4,10 @@
   "license": "MIT",
   "scripts": {
     "ng": "nx",
-    "start": "nx serve source",
-    "build": "nx build source",
-    "test": "nx test source",
-    "lint": "nx lint source"
+    "start": "nx serve nxPractice",
+    "build": "nx build nxPractice",
+    "test": "nx test nxPractice",
+    "lint": "nx lint nxPractice"
   },
   "private": true,
   "dependencies": {
@@ -20,6 +20,7 @@
     "@angular/platform-browser": "^20.3.6",
     "@angular/platform-browser-dynamic": "^20.3.6",
     "@angular/router": "^20.3.6",
+    "@fontsource-variable/open-sans": "^5.2.7",
     "rxjs": "~7.8.0",
     "zone.js": "~0.15.0"
   },
@@ -48,12 +49,10 @@
     "@swc-node/register": "~1.9.1",
     "@swc/core": "~1.5.7",
     "@swc/helpers": "~0.5.11",
-    "@tailwindcss/postcss": "^4.1.14",
     "@types/jest": "^29.5.12",
     "@types/node": "18.16.9",
     "@typescript-eslint/utils": "^8.40.0",
     "angular-eslint": "^20.3.0",
-    "autoprefixer": "^10.4.21",
     "eslint": "^9.8.0",
     "eslint-config-prettier": "^10.0.0",
     "eslint-plugin-playwright": "^1.6.2",
@@ -62,10 +61,8 @@
     "jest-environment-jsdom": "^29.7.0",
     "jest-preset-angular": "~14.6.1",
     "jest-util": "^29.7.0",
-    "nx": "21.6.5",
-    "postcss": "^8.5.6",
+    "nx": "21.0.0",
     "prettier": "^2.6.2",
-    "tailwindcss": "^4.1.14",
     "ts-jest": "^29.1.0",
     "ts-node": "10.9.1",
     "tslib": "^2.3.0",
@@ -74,5 +71,6 @@
   },
   "engine": {
     "node": "20.19.0"
-  }
+  },
+  "nx": {}
 }

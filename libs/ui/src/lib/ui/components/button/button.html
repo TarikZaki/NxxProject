@@ -1,4 +1,4 @@
-<button class="bg-primary" mat-flat-button [class]="buttonClass" [type]="type">
-  <ng-content></ng-content>
+{{label()}}
+<button mat-flat-button [type]="type()">
   <p>{{ requiredData() }}</p>
 </button>
