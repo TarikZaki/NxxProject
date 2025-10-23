@@ -1,33 +1,18 @@
 @use '@angular/material' as mat;
 
-// 1. Include Material core styles
-@include mat.core();
-
-// 2. Define your color scheme
-$app-theme: mat.define-theme((
-  color: (
-    theme-type: light, // or 'dark'
-  ),
-  typography: (
-    brand-family: 'Open Sans Variable',
-    plain-family: 'Open Sans Variable',
-  ),
- density: (
-  scale: 0
-),
-));
-
-// 3. Apply the theme to all components
-@include mat.all-component-themes($app-theme);
-
-// 4. Global app styles
 html {
-  color-scheme: light;
+  color-scheme: light dark;
+  @include mat.theme(
+    (
+      color: mat.$violet-palette,
+      typography: Roboto,
+      density: 0,
+    )
+  );
 }
 
 body {
   font-family: 'Open Sans Variable', sans-serif;
-    font-weight: 400;
-  background-color: var(--mat-sys-surface);
+  background: var(--mat-sys-surface);
   color: var(--mat-sys-on-surface);
 }

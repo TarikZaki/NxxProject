@@ -1,4 +1,4 @@
-import { Component, input, Input } from '@angular/core';
+import { ChangeDetectionStrategy, Component, input } from '@angular/core';
 import { MatButtonModule } from '@angular/material/button';
 
 @Component({
@@ -7,9 +7,9 @@ import { MatButtonModule } from '@angular/material/button';
   imports: [MatButtonModule],
   templateUrl: './button.html',
   styleUrls: ['./button.scss'],
+  changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class Button {
-  requiredData = input<string>();
-  label = input<string>('Click Me');
+  requiredData = input<string>('Click Me');
   type = input<'button' | 'submit' | 'reset'>('button');
 }
