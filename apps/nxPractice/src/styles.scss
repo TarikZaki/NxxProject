@@ -1,4 +1,7 @@
 @use '@angular/material' as mat;
+@tailwind utilities;
+@tailwind base;
+@tailwind components;
 
 html {
   color-scheme: light dark;
